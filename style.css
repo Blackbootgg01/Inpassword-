@@ -84,8 +84,11 @@ form, .login-with-fb {
     padding: 30px 20px 20px;
 }
 .rror-message{
+    text-align: center;
     color: red;
-    front-size: 24 ;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 form .sr-only {
