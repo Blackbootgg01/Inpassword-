@@ -26,7 +26,6 @@ ul { list-style: none; }
  * Flex rules
  */
 
-
 .flex {
     display: -webkit-box;
     display: -moz-box;
@@ -195,6 +194,16 @@ footer .copyright {
     text-transform: uppercase;
  }
 
+/**
+ * Error message
+ */
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin: 50vh 0; /* المسافة المطلوبة أعلى وأسفل الرسالة */
+    display: none; /* اجعلها مخفية افتراضيًا */
+}
 
 /**
  * Media queries
