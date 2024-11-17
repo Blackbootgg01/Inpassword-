@@ -1,4 +1,6 @@
-/* انسخ الملف بشكل كامل */
+
+
+/*                              انسخ الملف بشكل كامل                                */
 * {
     border: none;
     box-sizing: border-box;
@@ -194,15 +196,6 @@ footer .copyright {
     text-transform: uppercase;
  }
 
-/**
- * Error message
- */
-.error-message {
-    color: red;
-    font-size: 14px;
-    text-align: center;/* المسافة المطلوبة أعلى وأسفل الرسالة */
-    display: none; /* اجعلها مخفية افتراضيًا */
-}
 
 /**
  * Media queries
