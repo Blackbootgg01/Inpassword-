@@ -83,6 +83,10 @@ form, .login-with-fb {
 .login-with-fb {
     padding: 30px 20px 20px;
 }
+.rror-message{
+    color: red;
+    front-size: 24 ;
+}
 
 form .sr-only {
     display: none;
