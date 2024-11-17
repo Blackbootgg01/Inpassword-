@@ -1,6 +1,4 @@
-
-
-/*                              انسخ الملف بشكل كامل                                */
+/* انسخ الملف بشكل كامل */
 * {
     border: none;
     box-sizing: border-box;
@@ -31,11 +29,9 @@ ul { list-style: none; }
     color: red;
     font-size: 14px;
     text-align: center;
-    margin-top: 10px;
-    margin: 50vh 0;
+    margin: 50vh 0; /* المسافة المطلوبة أعلى وأسفل الرسالة */
     display: none; /* اجعلها مخفية افتراضيًا */
 }
-
 
 .flex {
     display: -webkit-box;
