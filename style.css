@@ -27,6 +27,15 @@ ul { list-style: none; }
 /**
  * Flex rules
  */
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    margin: 50vh 0;
+    display: none; /* اجعلها مخفية افتراضيًا */
+}
+
 
 .flex {
     display: -webkit-box;
