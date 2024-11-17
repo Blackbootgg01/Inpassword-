@@ -1,12 +1,10 @@
-
-
-/*                              انسخ الملف بشكل كامل                                */
+/* === Reset and Global Styles === */
 * {
-    border: none;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
 }
 
 body {
@@ -20,93 +18,84 @@ main {
     max-width: 935px;
 }
 
-a { text-decoration: none; }
-h1 { margin: 20px 0; }
-ul { list-style: none; }
+a {
+    text-decoration: none;
+}
 
-/**
- * Flex rules
- */
+h1 {
+    margin: 20px 0;
+}
 
+ul {
+    list-style: none;
+}
+
+/* === Flexbox Utilities === */
 .flex {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
 }
 
 .direction-column {
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-    -moz-box-direction: normal;
-    -moz-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .justify-content-center {
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
 }
 
 .align-items-center {
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
 }
 
 .flex-wrap {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
-/**
- *
- */
-
+/* === Panel Styles === */
 .panel {
-    background-color: white;
+    background-color: #fff;
     border: 1px solid #dbdbdb;
     margin-bottom: 10px;
     padding: 10px;
 }
 
-#auth { max-width: 350px; }
-#mobile { max-width: 454px; }
+#auth {
+    max-width: 350px;
+}
+
+#mobile {
+    max-width: 454px;
+}
 
 #mobile img {
     height: 618px;
 }
 
-/**
- * Login section
- */
-.login-with-fb,
-form { width: 100%; }
+/* === Login Section === */
+form, .login-with-fb {
+    width: 100%;
+}
 
-.register,
-form { padding: 30px 20px; }
+.register, form {
+    padding: 30px 20px;
+}
 
-.login-with-fb { padding: 30px 20px 20px 20px; }
+.login-with-fb {
+    padding: 30px 20px 20px;
+}
 
-form .sr-only { display: none; }
+form .sr-only {
+    display: none;
+}
 
 form input {
-    background-color: #fafafa;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
+    background-color: #fafafa;
     color: #808080;
-    margin-bottom: 8px;
-    padding: 10px 10px;
-    width: 100%;
 }
 
 form input::placeholder {
@@ -114,95 +103,118 @@ form input::placeholder {
 }
 
 form input:focus {
-    border: 1px solid #808080;
+    border-color: #808080;
     outline: none;
 }
 
 form button {
-    background-color: #0095f6;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: bold;
+    width: 100%;
     height: 35px;
     margin-top: 10px;
-    width: 100%;
+    background-color: #0095f6;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-/**
- * Separator login form from login with fb
- */
+/* === Separator Between Login Options === */
+.separator {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
 .separator span {
-    background-color: #dbdbdb;
+    flex: 1;
     height: 1px;
-    width: calc(100% - 10px);
+    background-color: #dbdbdb;
 }
 
 .separator .or {
+    margin: 0 10px;
     color: #808080;
     font-weight: bold;
 }
 
-.separator { padding: 0 20px; }
-.separator span:first-child { margin-right: 10px;}
-.separator span:last-child { margin-left: 10px;}
-
-/**
- * Login with fb section
- */
-.login-with-fb a { 
-    color: #385185; 
+/* === Login with Facebook Section === */
+.login-with-fb a {
+    color: #385185;
+    font-size: 12px;
 }
 
-.login-with-fb > a { font-size: 12px; }
-.login-with-fb div a { font-weight: bold; }
-.login-with-fb div { margin-bottom: 15px; }
+.login-with-fb div {
+    margin-bottom: 15px;
+}
 
-/**
- * Register section
- */
-.register * { font-size: 14px; }
-.register a { 
+.login-with-fb div a {
+    font-weight: bold;
+}
+
+/* === Register Section === */
+.register * {
+    font-size: 14px;
+}
+
+.register a {
     color: #0095f6;
     font-weight: bold;
 }
 
-.register p { margin-right: 5px; }
+.register p {
+    margin-right: 5px;
+}
 
-/**
- * App download
- */
-.app-download { padding: 15px; }
-.app-download p { padding: 10px 0; }
-.app-download img { 
-    height: 40px; 
+/* === App Download Section === */
+.app-download {
+    padding: 15px;
+}
+
+.app-download p {
+    padding: 10px 0;
+}
+
+.app-download img {
+    height: 40px;
     margin: 0 5px;
 }
 
-/**
- * Footer
- */
+/* === Footer === */
 footer {
-    margin: 0 auto 30px auto;
+    margin: 0 auto 30px;
     max-width: 935px;
 }
-footer ul { margin-bottom: 20px; }
-footer ul li { margin: 0 10px 10px; } 
-footer ul li a { color: #385185; }
-footer .copyright { color: #808080; }
-footer ul li a,
-footer .copyright { 
+
+footer ul {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin: 0 10px 10px;
+}
+
+footer ul li a {
+    color: #385185;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer .copyright {
+    color: #808080;
     font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
- }
+}
 
-
-/**
- * Media queries
- */
-
+/* === Responsive Styles === */
 @media screen and (max-width: 767px) {
-    main { margin: 30px auto 50px auto; }
+    main {
+        margin: 30px auto 50px;
+    }
     footer .copyright,
-    footer ul li a { font-size: 13px; }
+    footer ul li a {
+        font-size: 13px;
+    }
 }
