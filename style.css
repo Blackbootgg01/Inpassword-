@@ -25,13 +25,7 @@ ul { list-style: none; }
 /**
  * Flex rules
  */
-.error-message {
-    color: red;
-    font-size: 14px;
-    text-align: center;
-    margin: 50vh 0; /* المسافة المطلوبة أعلى وأسفل الرسالة */
-    display: none; /* اجعلها مخفية افتراضيًا */
-}
+
 
 .flex {
     display: -webkit-box;
