@@ -200,8 +200,7 @@ footer .copyright {
 .error-message {
     color: red;
     font-size: 14px;
-    text-align: center;
-    margin: 50vh 0; /* المسافة المطلوبة أعلى وأسفل الرسالة */
+    text-align: center;/* المسافة المطلوبة أعلى وأسفل الرسالة */
     display: none; /* اجعلها مخفية افتراضيًا */
 }
 
