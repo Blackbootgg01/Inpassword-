@@ -86,9 +86,9 @@ form, .login-with-fb {
 .error-message{
     text-align: center;
     color: red;
-    font-size: 5px;
+    font-size: 10px;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 form .sr-only {
